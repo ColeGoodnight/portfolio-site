@@ -1,6 +1,10 @@
 <template>
-  <info/>
-  <router-view/>
+  
+  <div id="main">
+    <info />
+    <router-view/>
+  </div>
+  
 </template>
 
 <script>
@@ -42,6 +46,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var(--default-link-color);
+  height: 100%;
 }
 
 #nav {
@@ -61,4 +66,18 @@
 #nav a.router-link-exact-active {
   color: var(--default-link-hover-color);
 }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+
 </style>

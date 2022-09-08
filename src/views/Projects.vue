@@ -1,16 +1,30 @@
 <template>
-    <div>
-
-    </div>
+    <SlidingInfoVue title="Cloud Blog App" >
+        <template v-slot:image>
+        
+        </template>
+        <template v-slot:content>
+        
+        </template>
+    </SlidingInfoVue>
+    <SlidingInfoVue title="Portfolio Site" >
+        <template v-slot:image>
+        
+        </template>
+        <template v-slot:content>
+        
+        </template>
+    </SlidingInfoVue>
 </template>
 
 <script>
-export default {
-    setup () {
-        
+import SlidingInfoVue from '../components/SlidingInfo.vue';
 
-        return {}
-    }
+export default {
+    setup() {
+        return {};
+    },
+    components: { SlidingInfoVue }
 }
 </script>
 

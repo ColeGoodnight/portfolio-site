@@ -1,5 +1,5 @@
 <template>
-    <div id="main">
+    <div id="header">
         <div id="name">
             <router-link to='/'>
                 Cole Goodnight
@@ -35,10 +35,11 @@ export default {
 </script>
 
 <style scoped>
-    #main {
+    #header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: auto;
     }
 
     #nav {

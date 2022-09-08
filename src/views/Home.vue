@@ -25,11 +25,16 @@ export default {
                 "\"One is always a long way from solving a problem until one actually has the answer.\" - Stephen Hawking",
                 "\"Experience is critical, for it determines how fondly people remember their interactions.\" - Don Norman",
                 "\"That thing wasn't even fully paid off yet!\" - Emperor Palpatine",
-            ]
+                "\"Life is too short, I will never learn all that exist in our tiny galaxy let alone the rest of the universe.\" - Catherine Halsey",
+                "\"Obstacles are found everywhere, and in overcoming them we nourish ourselves.\" - David Belle",
+                "\"I try to not ruin biking and keep it the same fun it has always been. I try to make obstacles or projects that keep me stoked.\" - Brandon Semenuk"
+                
+            ],
+            animationTiming: 8
         }
     },
     created() {
-      this.interval = setInterval(this.getQuoteText, 8000);
+      this.interval = setInterval(this.getQuoteText, this.animationTiming * 1000);
     },
     mounted() {
       this.$refs.quote.innerHTML =  "Hi there, my name is Cole. I engineer software (amongst other things)."
@@ -43,6 +48,11 @@ export default {
         this.$refs.quote.innerHTML = nextQuote
       }
     },
+    computed: {
+      animationTimingString() {
+        return 'fade infinite ' + this.animationTiming.toString() +'s'
+      }
+    },
     setup() {
       const quote = ref(null)
 
@@ -54,27 +64,30 @@ export default {
 </script>
 
 <style>
-    p {
-      max-width: 65ch;
-      margin: 0 auto;
-    }
+  p {
+    max-width: 65ch;
+    margin: 0 auto;
+    height: 54px;
+    font-weight: 400;
+  }
 
-    #headshot {
-        border-radius: 50%;
-        width: 300px;
-        margin: auto
-    }
+  #headshot {
+      border-radius: 50%;
+      width: 300px;
+      margin: auto
+  }
 
-    #home {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: 40px;
-    }
+  #home {
+    margin-top: 5%;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
 #changeQuote{
   opacity: 0;
-  animation: fade infinite 8s;
+  animation: v-bind(animationTimingString);
 }
 
 @keyframes fade{
