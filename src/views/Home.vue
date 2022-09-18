@@ -27,8 +27,8 @@ export default {
                 "\"That thing wasn't even fully paid off yet!\" - Emperor Palpatine",
                 "\"Life is too short, I will never learn all that exist in our tiny galaxy let alone the rest of the universe.\" - Catherine Halsey",
                 "\"Obstacles are found everywhere, and in overcoming them we nourish ourselves.\" - David Belle",
-                "\"I try to not ruin biking and keep it the same fun it has always been. I try to make obstacles or projects that keep me stoked.\" - Brandon Semenuk"
-                
+                "\"I try to not ruin biking and keep it the same fun it has always been. I try to make obstacles or projects that keep me stoked.\" - Brandon Semenuk",
+                "\"Success depends on forethought, dispassionate calculation of probabilities, accounting for every stray variable.\" - Robert House",
             ],
             animationTiming: 8
         }
@@ -37,7 +37,7 @@ export default {
       this.interval = setInterval(this.getQuoteText, this.animationTiming * 1000);
     },
     mounted() {
-      this.$refs.quote.innerHTML =  "Hi there, my name is Cole. I engineer software (amongst other things)."
+      this.$refs.quote.innerHTML =  "Hi there, my name is Cole. I design software (amongst other things)."
     },
     methods: {
       getQuoteText() {
