@@ -7,13 +7,15 @@
             <template v-slot:content>
                 <div class="textContainer">
                     <h2>Summer 2022</h2>
-                    <p>During my 12 week internship with Polaris I was in charge of developing Customer Analytics Twin, an application to visualize customer analytics information. This tool is projected to increase return customer sales by 0.01%, generating $13.8M of value over the next 3 years.</p>
+                    <p>During my 12 week internship with Polaris I was in charge of developing Customer Analytics Twin, an application to visualize customer analytics information. This tool is projected to increase return customer sales by 0.01%, generating $13.8M of value over the next 3 years. While CAT is primarily targeted at sales people in Polaris dealerships, there are a variety of other internal use cases in customer relations and marketing.</p>
                 </div>
                 <img src="@/assets/DemoDataScreenshot.png" />
                 <div class="textContainer">
-                    <p>The resulting product is an MVC application with a frontend built in a hybrid of Vanilla.js and Blazor pages. The backend is implemented in ASP.NET Core, interfacing with a Snowflake database. This application is deployed to a CI/CD pipeline using Azure DevOps. On the frontend the analytics page utilizes an SPA-esque pattern; when a new customer's information is retrieved from the database via REST, on screen information is updated without a page reload.</p>
+                    <p>The resulting product is an MVC application with a frontend built in a hybrid of Vanilla.js and C# Blazor pages. The backend is implemented in ASP.NET Core, interfacing with a Snowflake database. This application is deployed to a CI/CD pipeline using Azure DevOps. On the frontend the analytics page utilizes an SPA-esque pattern; when a new customer's information is retrieved from the database via REST, on screen information is updated without a page reload.</p>
                     <br>
                     <p>Funtionality that is not pictured above includes a "Pull List" function, allowing end users to generate lists of customers fitting certain criteria for marketing purposes. This includes filters for various attributes such as location, generalized demographics info, and existing productline owners. This then generates and executes a dynamic SQL query to retrieve customer's information, which can be displayed within the application or downloaded for use elsewhere.</p>
+                    <br>
+                    <p>My time at Polaris offered the unique experience to take full ownership of a project with real world effects (and actual end users!). One of the big challenges was the system design aspect of this project, specifically working within the constraints of an existing organization's previous technology choices. While I was not familiar with C# or the .NET framework prior to this, it made sense to build and deploy it the application in a similar fashion to others apps in the Polaris ecosystem.</p>
                 </div>
             </template>
         </SlidingInfoVue>
@@ -41,7 +43,7 @@
                 <template v-slot:content>
                     <div class="textContainer">
                         <h2>Winter 2021 - Present</h2>
-                        <p>As Lead Tutor at WWU I was primarily responsible for managing our tutoring staff as well as tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and ASM, often with some hard to debug problems arising.</p>
+                        <p>As Lead Tutor at WWU I was primarily responsible for managing our tutoring staff as well as tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and ASM, often with some hard-to-debug problems arising.</p>
                     </div>
                 </template>
             </SlidingInfoVue>
