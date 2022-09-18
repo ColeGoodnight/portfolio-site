@@ -15,7 +15,7 @@
                     <br>
                     <p>Funtionality that is not pictured above includes a "Pull List" function, allowing end users to generate lists of customers fitting certain criteria for marketing purposes. This includes filters for various attributes such as location, generalized demographics info, and existing productline owners. This then generates and executes a dynamic SQL query to retrieve customer's information, which can be displayed within the application or downloaded for use elsewhere.</p>
                     <br>
-                    <p>My time at Polaris offered the unique experience to take full ownership of a project with real world effects (and actual end users!). One of the big challenges was the system design aspect of this project, specifically working within the constraints of an existing organization's previous technology choices. While I was not familiar with C# or the .NET framework prior to this, it made sense to build and deploy it the application in a similar fashion to others apps in the Polaris ecosystem.</p>
+                    <p>My time at Polaris offered the unique experience to take full ownership of a project with real world effects (and actual end users!). One of the big challenges was the system design aspect of this project, specifically working within the constraints of an existing organization's previous technology choices. While I was not familiar with C# or the .NET framework prior to this, it made sense to build and deploy the application in a similar fashion to others in the Polaris ecosystem. </p>
                 </div>
             </template>
         </SlidingInfoVue>
@@ -31,6 +31,9 @@
                     <br>
                     <h2>Spring 2022</h2>
                     <p>More recently I have TAed for WWU's introductory programming course, Programming Fundamentals in C++. This class is starting from scratch, teaching students fundamental ideas such as variables, control flow, and code reuse. With this course the professor already had a CI/CD pipeline to automate grading, so my focus was on helping students with conceptual understanding and code. This class was particularly challenging as students were less experienced than those in my previous TA position, as well as a much larger amount of them. I often found myself having to create analogies and other creative methods to describe difficult concepts.</p>
+                    <br>
+                    <h2>Fall 2022</h2>
+                    <p>I am currently a TA for WWU's introductory web development course, primary topics include basic HTML/CSS and some JavaScript.</p>
                 </div>
             </template>
         </SlidingInfoVue>
@@ -43,7 +46,7 @@
                 <template v-slot:content>
                     <div class="textContainer">
                         <h2>Winter 2021 - Present</h2>
-                        <p>As Lead Tutor at WWU I was primarily responsible for managing our tutoring staff as well as tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and ASM, often with some hard-to-debug problems arising.</p>
+                        <p>As Lead Tutor at WWU I am primarily responsible for managing our tutoring staff as well as tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and Assembly, where hard to debug problems often arise.</p>
                     </div>
                 </template>
             </SlidingInfoVue>
