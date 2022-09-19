@@ -29,6 +29,13 @@ export default {
                 "\"Obstacles are found everywhere, and in overcoming them we nourish ourselves.\" - David Belle",
                 "\"I try to not ruin biking and keep it the same fun it has always been. I try to make obstacles or projects that keep me stoked.\" - Brandon Semenuk",
                 "\"Success depends on forethought, dispassionate calculation of probabilities, accounting for every stray variable.\" - Robert House",
+                "\"Only on the hard path can you actualize your potential, grow, mature, have peak human experiences and enjoy epiphanies.\" - Thomas Stark",
+                "\"We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.\" - Stephen Hawking",
+                "\"We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.\" - Carl Sagan",
+                "\"The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.\" - Issac Asimov",
+                "\"Abstraction is one of the greatest visionary tools ever invented by human beings to image, decipher, and depict the world.\" - Jerry Saltz",
+                "\"Computer Science is a science of abstraction - creating the right model for a problem and devising the appropriate mechanizable techniques to solve it\" - Alfred Aho",
+                
             ],
             animationTiming: 8
         }

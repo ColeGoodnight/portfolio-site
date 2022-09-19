@@ -1,6 +1,6 @@
 <template>
     <div id = "main">
-        <SlidingInfoVue title="Polaris Inc. - Software Development Intern" >
+        <SlidingInfoVue title="Polaris Inc. - Software Engineer Intern" >
             <template v-slot:image>
                 <PolarisLogo />
             </template>
@@ -30,7 +30,7 @@
                     <p>During this period as Teacher's Assistant I was TAing for WWU's UNIX Software Development and Multithreading class. The main topics in this class include multithreading, low level C concepts, and process management/control. I was primarily responsible for grading, helping students with conceptual understanding, and helping students debug code. To make my own grading work more efficient, I develop a series of Python scripts to partially automate assignment grading. These scripts resulted in an 80 percent reduction in grading time on average, and also reduced the error rate. This was compared to a baseline of the first two weeks, where I manually graded assignments.</p>
                     <br>
                     <h2>Spring 2022</h2>
-                    <p>More recently I have TAed for WWU's introductory programming course, Programming Fundamentals in C++. This class is starting from scratch, teaching students fundamental ideas such as variables, control flow, and code reuse. With this course the professor already had a CI/CD pipeline to automate grading, so my focus was on helping students with conceptual understanding and code. This class was particularly challenging as students were less experienced than those in my previous TA position, as well as a much larger amount of them. I often found myself having to create analogies and other creative methods to describe difficult concepts.</p>
+                    <p>More recently I have TAed for WWU's introductory programming course, Programming Fundamentals in C++. This class is starting from scratch, teaching students fundamental ideas such as variables, control flow, and code reuse. With this course the professor already had a CI/CD pipeline to automate grading, so my focus was on helping students with conceptual understanding and code. This class was particularly challenging as students were less experienced than those in my previous TA position, as well as there being a much larger amount of them. I often found myself having to create analogies and other creative methods to describe difficult concepts.</p>
                     <br>
                     <h2>Fall 2022</h2>
                     <p>I am currently a TA for WWU's introductory web development course, primary topics include basic HTML/CSS and some JavaScript.</p>
@@ -80,7 +80,6 @@ export default {
 
     #main {
         margin-top: 5%;
-        
     }
 
     h2 {
