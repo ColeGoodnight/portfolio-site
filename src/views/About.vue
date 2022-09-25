@@ -35,6 +35,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 1.4;
+    height: 100%;
   }
 
   img {
