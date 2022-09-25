@@ -1,8 +1,8 @@
 <template>
     <div id = "main">
-        <SlidingInfoVue title="Polaris Inc. - Software Engineer Intern" >
+        <SlidingInfo title="Software Engineer Intern" employer="Polaris Inc." >
             <template v-slot:image>
-                <PolarisLogo />
+                <PolarisLogo/>
             </template>
             <template v-slot:content>
                 <div class="textContainer">
@@ -18,11 +18,11 @@
                     <p>My time at Polaris offered the unique experience to take full ownership of a project with real world effects (and actual end users!). One of the big challenges was the system design aspect of this project, specifically working within the constraints of an existing organization's previous technology choices. While I was not familiar with C# or the .NET framework prior to this, it made sense to build and deploy the application in a similar fashion to others in the Polaris ecosystem. </p>
                 </div>
             </template>
-        </SlidingInfoVue>
+        </SlidingInfo>
 
-        <SlidingInfoVue title="Western Washington University - Teacher's Assistant" >
+        <SlidingInfo title="Teacher's Assistant" employer="Western Washington University" >
             <template v-slot:image>
-                <WWULogo />
+                <WWULogo/>
             </template>
             <template v-slot:content>
                 <div class="textContainer">
@@ -36,12 +36,12 @@
                     <p>I am currently a TA for WWU's introductory web development course, primary topics include basic HTML/CSS and some JavaScript.</p>
                 </div>
             </template>
-        </SlidingInfoVue>
+        </SlidingInfo>
         
         <div class="bottomItem">
-            <SlidingInfoVue class="bottomItem" title="Western Washington University - Lead Tutor" >
+            <SlidingInfo class="bottomItem" title="Lead Tutor" employer="Western Washington University" >
                 <template v-slot:image>
-                    <WWULogo />
+                    <WWULogo/>
                 </template>
                 <template v-slot:content>
                     <div class="textContainer">
@@ -49,21 +49,22 @@
                         <p>As Lead Tutor at WWU I am primarily responsible for managing our tutoring staff as well as tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and Assembly, where hard to debug problems often arise.</p>
                     </div>
                 </template>
-            </SlidingInfoVue>
+            </SlidingInfo>
         </div>
     </div>
+    
 </template>
 
 <script>
-import SlidingInfoVue from '../components/SlidingInfo.vue';
+import SlidingInfo from '../components/SlidingInfo.vue';
 import WWULogo from '../components/WWULogo.vue';
 import PolarisLogo from '../components/PolarisLogo.vue';
 
 export default {
     components: {
-    SlidingInfoVue,
+    SlidingInfo,
     WWULogo,
-    PolarisLogo
+    PolarisLogo,
 },
     setup () {
         
@@ -88,15 +89,19 @@ export default {
 
     p {
         text-align: left;
-        height: 100%
+        height: 100%;
+        font-size: 20px;
+        line-height: 1.4;
     }
 
     img {
-        width: 100%
+        width: 100%;
+        margin: 5px;
     }
 
     .textContainer {
         max-width: 70ch;
         align-self:center;
+        margin: 0 20px;
     }
 </style>

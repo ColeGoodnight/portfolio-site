@@ -14,15 +14,6 @@
    components: {
      info
    },
-   methods: {
-        isMobile() {
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                return true
-            } else {
-                return false
-            }
-        },
-   }
  }
 </script>
 
@@ -43,6 +34,7 @@
 #app {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var(--default-link-color);

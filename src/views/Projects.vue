@@ -21,7 +21,7 @@
                 </template>
                 <template v-slot:content>
                     <div class="textContainer">
-                        <p>This project (the site you're on!) is meant to serve as a single point-of-contact (github, email, linkedin, etc.), a way to detail my experiences more than what's offered by my resume, and try some new technologies in the form of Vue, Go, and Google Cloud. You can find the source code <a href="https://github.com/ColeGoodnight/portfolio-site" target="_blank">here on Github</a>.</p>
+                        <p>This project (the site you're on!) is meant to serve as a single point-of-contact (github, email, linkedin, etc.), a way to detail my experiences more than what's offered by my resume, and try some new technologies in the form of Vue, Docker, and Google Cloud. You can find the source code <a href="https://github.com/ColeGoodnight/portfolio-site" target="_blank">here on Github</a>.</p>
                         <br>
                         <p>While I found some challenges in the form of learning curve, new technolgies, etc., I learned primarily about UX/UI concepts in creating this site. I explored several different concepts in Figma before settling on the current design, <a href="https://www.figma.com/file/p8BwwlT6EjlYCho5GoDR5b/Portfolio-Site?node-id=64%3A261" target="_blank">all of which can be seen here</a>.</p> 
                     </div>
@@ -45,12 +45,16 @@ export default {
 <style scoped>
     p {
         text-align: left;
-        height: 100%
+        height: 100%;
+        font-size: 20px;
+        
     }
 
     .textContainer {
         max-width: 70ch;
         align-self:center;
+        margin: 0 20px;
+        line-height: 1.4;
     }
 
     #main {
