@@ -1,17 +1,9 @@
 <template>
-    <div :class="$isMobile() ? 'mobileInfo' : 'info'">
-        <div id="flex" @mouseenter="!$isMobile() ? toggleFill() : null" @mouseleave="toggleFill()" @click="toggleContentVis()">
-            <div :class="$isMobile() ? 'hidden' : ''">
-                <slot name="image" id="companyImg"></slot>
-            </div>
-            
-            <div :class="$isMobile() ? '' : 'hidden'">
-                <h1 :class="'mobileh1'">{{ employer }}</h1>
-                <h1 :class="'mobileh1'">{{ title }}</h1>
-            </div>
-            
-            <h1 :class="$isMobile() ? 'hidden' : ''">{{ headerContent }}</h1>
-            <dropdown :class="$isMobile() ? 'dropdownMobile' : 'dropdown'" />
+    <div id="info">
+        <div id="flex" @mouseenter="toggleFill()" @mouseleave="toggleFill()" @click="toggleContentVis()">
+            <slot name="image" id="companyImg"></slot>
+            <h1>{{ title }}</h1>
+            <dropdown id="dropdown" />
         </div>
         <div id="content">
             <slot name="content">
@@ -29,7 +21,6 @@ export default {
     },
     props: {
         title: String,
-        employer: String
     },
     data() {
         return{
@@ -55,13 +46,6 @@ export default {
             } else {
                 return 'flex'
             }
-        },
-        headerContent() {
-            if (this.employer != null) {
-                return this.employer + ' - ' + this.title
-            } else {
-                return this.title
-            }
         }
     },
     methods: {
@@ -69,7 +53,6 @@ export default {
             this.fillToggle = !this.fillToggle
         },
         toggleContentVis() {
-            this.toggleFill()
             this.contentToggle = !this.contentToggle
         }
     },
@@ -89,6 +72,7 @@ export default {
         display: inline-block;
         height: 60px;
         width: 86px;
+
     }
 
     .hidden {
@@ -100,45 +84,22 @@ export default {
         gap: 40px;
         align-items: center;
         cursor: pointer;
-        margin: 0 20px;
     }
 
-    .info {
+    #info {
+        width: 120ch;
         margin: 0px auto;
         padding: 0 10px;
-        width: 120ch;
-    }
-
-    @media (max-width: 1088px) {
-        .info {
-            margin: 0px auto;
-            padding: 0 10px;
-            width: 100%
-        }
-    }
-
-
-    .mobileInfo {
-        width: 100%;
-        /*height: 100px;*/
     }
 
     img {
         height: 60px;
     }
 
-    .dropdown {
+    #dropdown {
         height: 30px;
-        width: 40px;
+        width: auto;
         margin-left: auto;
-    }
-
-    .dropdownMobile {
-        width: 30px;
-        height: 30px;
-        margin-left: auto;
-        flex-shrink: 0;
-        flex-basis: 30px;
     }
 
     #flex >>> #svg38 path, #flex >>> svg g path {
@@ -147,12 +108,6 @@ export default {
 
     h1 {
         color: v-bind(headerFill);
-        text-align: left;
-    }
-
-    .mobileh1 {
-        font-size: 20px;
-        text-align: left;
     }
 
     #content {
