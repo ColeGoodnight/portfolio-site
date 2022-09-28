@@ -38,7 +38,7 @@
             </template>
         </SlidingInfo>
         
-        <SlidingInfo class="bottomItem" title="Lead Tutor" employer="Western Washington University" >
+        <SlidingInfo title="Lead Tutor" employer="Western Washington University" >
             <template v-slot:image>
                 <WWULogo/>
             </template>
