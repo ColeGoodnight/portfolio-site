@@ -38,15 +38,27 @@
             </template>
         </SlidingInfo>
         
+        <SlidingInfo class="bottomItem" title="Lead Tutor" employer="Western Washington University" >
+            <template v-slot:image>
+                <WWULogo/>
+            </template>
+            <template v-slot:content>
+                <div class="textContainer">
+                    <h2>Winter 2021 - Present</h2>
+                    <p>As Lead Tutor at WWU I am primarily responsible for managing our tutoring staff, while also tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and Assembly, where hard to debug problems often arise.</p>
+                </div>
+            </template>
+        </SlidingInfo>
+
         <div class="bottomItem">
-            <SlidingInfo class="bottomItem" title="Lead Tutor" employer="Western Washington University" >
+            <SlidingInfo class="bottomItem" title="AR Tour Guide App" employer="Western Washington University" >
                 <template v-slot:image>
                     <WWULogo/>
                 </template>
                 <template v-slot:content>
                     <div class="textContainer">
-                        <h2>Winter 2021 - Present</h2>
-                        <p>As Lead Tutor at WWU I am primarily responsible for managing our tutoring staff, while also tutoring students myself. The tutoring program covers a wide variety of topics including but not limited to Data Structures, Systems, Formal Languages, and Databases. Throughout my 2 years of tutoring I have answered more than 300 questions (and saved countless due-night-of assignments). Tutoring can be challenging due to the wide variety of experience levels that we receive, as well as some of the problems being legitimately quite difficult to solve; we service some more advanced classes that work with languages like C and Assembly, where hard to debug problems often arise.</p>
+                        <h2>Spring 2022 - Present</h2>
+                        <p>I am one of 4 developers working on an augmented reality tour guide app to help students navigate WWU's campus. This application has multiple components, primarily an Android application implemented in Kotlin that serves the primary tour guide functionality. There is also an administrative portal developed in Vue.js and Express.js that allows administrators to update, add, or remove building information. Our team works with Agile methodologies, utilizing Mocha Chai/JUnit 5 to implemented test-driven development and using Cucumber to implement behavior-driven development.</p>
                     </div>
                 </template>
             </SlidingInfo>
