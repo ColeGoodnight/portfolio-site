@@ -84,7 +84,7 @@ export default {
 
 <style>
   p {
-    max-width: 65ch;
+    max-width: 60ch;
     margin: 0 auto;
     height: 54px;
     font-weight: 400;

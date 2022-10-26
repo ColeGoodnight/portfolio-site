@@ -36,7 +36,9 @@ export default {
             navigator.clipboard.writeText(s)
         },
         toggleTextVis() {
-            this.visText = !this.visText
+            if (! this.$isMobile()) {
+                this.visText = !this.visText
+            } 
         }
     },
     data() {
@@ -74,11 +76,15 @@ export default {
         fill: var(--default-link-color)
     }
 
+    .linkimg:hover:active {
+        fill: var(--default-link-color)
+    }
+
     p {
         height: auto;
         margin-top: 2px;
         margin-bottom: -15px;
-        font-size:12px;
+        font-size: 12px;
         color: v-bind(textVisible);
     }
 
