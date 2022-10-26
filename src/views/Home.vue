@@ -35,24 +35,36 @@ export default {
                 "\"The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.\" - Issac Asimov",
                 "\"Abstraction is one of the greatest visionary tools ever invented by human beings to image, decipher, and depict the world.\" - Jerry Saltz",
                 "\"Computer Science is a science of abstraction - creating the right model for a problem and devising the appropriate mechanizable techniques to solve it\" - Alfred Aho",
+                "\"The future of freeride is more freeride\" - Andreu Lacondeguy"
                 
             ],
-            animationTiming: 8
+            quoteCounter: [],
+            animationTiming: 9  
         }
     },
     created() {
-      this.interval = setInterval(this.getQuoteText, this.animationTiming * 1000);
+      this.interval = setInterval(this.getQuoteText, this.animationTiming * 1000)
     },
     mounted() {
       this.$refs.quote.innerHTML =  "Hi there, my name is Cole. I design software (amongst other things)."
+      this.quoteCounter = new Array(this.quotes.length).fill(false)
     },
     methods: {
       getQuoteText() {
-        var nextQuote =  this.quotes[Math.trunc(Math.random() * this.quotes.length)]
-        while (nextQuote === this.$refs.quote.innerHTML) {
-          nextQuote =  this.quotes[Math.trunc(Math.random() * this.quotes.length)]
+        // will not perfectly randomly cycle all the time, but should be pretty good
+
+        let counter = this.quotes.length * 1.5
+        let quoteIndex = Math.trunc(Math.random() * this.quotes.length)
+        while (this.quoteCounter[quoteIndex]) {
+          quoteIndex = Math.trunc(Math.random() * this.quotes.length)
+          counter -= 1
+          if (counter <= 0) {
+            this.quoteCounter = new Array(this.quotes.length).fill(false)
+          }
         }
-        this.$refs.quote.innerHTML = nextQuote
+
+        this.quoteCounter[quoteIndex] = true
+        this.$refs.quote.innerHTML = this.quotes[quoteIndex]
       }
     },
     computed: {
