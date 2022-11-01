@@ -75,7 +75,8 @@ export default {
     max-width: 60ch;
     margin: 0 auto;
     height: 54px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: large;
   }
 
   #headshot {

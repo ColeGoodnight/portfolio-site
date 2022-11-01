@@ -64,11 +64,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 40px;
+  
 }
 
 body {
   margin: 0;
   overflow-y: scroll;
+  /* background-color: #c5b39a; */ 
 }
 
 

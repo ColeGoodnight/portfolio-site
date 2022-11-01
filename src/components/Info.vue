@@ -1,13 +1,13 @@
 <template>
     <div id="header">
         <div v-if="$isMobile()" id="mobileName">
-            <router-link to='/'>
-                Cole Goodnight
+            <router-link class="routerLink" to='/'>
+                COLE GOODNIGHT
             </router-link>
         </div>
         <div v-else id="name">
-            <router-link @click='none' to='/'>
-                Cole Goodnight
+            <router-link class="routerLink" @click='none' to='/'>
+                COLE GOODNIGHT
             </router-link>
         </div>
 
@@ -15,18 +15,18 @@
         <div v-if="$isMobile()" id="slide">
             <SidebarMenu v-slot="scope">
                     <div id="flexCol">
-                        <router-link to='/' @click="scope.toggle">Home</router-link>
-                        <router-link to='/experience/' @click="scope.toggle">Experience</router-link>
-                        <router-link to='/projects/' @click="scope.toggle">Projects</router-link>
-                        <router-link to='/about' @click="scope.toggle">About</router-link>
+                        <router-link class="routerLink" to='/' @click="scope.toggle">HOME</router-link>
+                        <router-link class="routerLink" to='/experience/' @click="scope.toggle">EXPERIENCE</router-link>
+                        <router-link class="routerLink" to='/projects/' @click="scope.toggle">PROJECTS</router-link>
+                        <router-link class="routerLink" to='/about' @click="scope.toggle">ABOUT</router-link>
                     </div>
             </SidebarMenu>
         </div> 
         <div v-else id="nav">
-            <router-link to='/'>Home</router-link>
-            <router-link to='/experience/'>Experience</router-link>
-            <router-link to='/projects/'>Projects</router-link>
-            <router-link to='/about'>About</router-link>
+            <router-link class="routerLink" to='/'>HOME</router-link>
+            <router-link class="routerLink" to='/experience/'>EXPERIENCE</router-link>
+            <router-link class="routerLink" to='/projects/'>PROJECTS</router-link>
+            <router-link class="routerLink" to='/about'>ABOUT</router-link>
         </div>
         
     </div>
@@ -91,6 +91,10 @@ export default {
     #name {
         display: flex;
         margin: 40px;
+    }
+
+    .routerLink {
+        text-decoration: none;
     }
 
     #name a {

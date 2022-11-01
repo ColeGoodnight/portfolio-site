@@ -9,7 +9,7 @@
       <img src="@/assets/Frontflip.gif" rel="preload"/>
       <img :class="$isMobile() ? 'hidden' : ''" src="@/assets/CedarDustTable.jpg" rel="preload"/>
     </div> 
-    <div class="textContainer">
+    <div class="textContainer" id="lastItem">
       <p>Some other hobbies of mine include architecture, 3D printing, and sim racing. I try to take the lessons that I learn during these activities and apply them to my computer science work, I find that there is immense opportunity to grow through this methodology.</p> 
     </div>
   </div>
@@ -50,6 +50,10 @@
 
   .hidden {
     display: none;
+  }
+
+  #lastItem {
+    margin-bottom: 100px;
   }
 
 </style>
