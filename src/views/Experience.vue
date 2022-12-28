@@ -36,7 +36,7 @@
                     <p>During this period I performed similar duties as Teacher's Assistant for WWU's introductory web development course. The primary topics of this class include basic HTML/CSS and some JavaScript. My responsibilities included running weekly labs and grading student assignments.</p>
                     <br>
                     <h2>Winter 2022</h2>
-                    <p>This quarter I am TAing for WWU's introductory systems course. Topics of this course include low level C and ASM programming. My responsibilities include running weekly labs and grading student assignments.</p>
+                    <p>This quarter I'm TAing for WWU's introductory systems course. Topics of this course include low level C and ASM programming. My responsibilities include running weekly labs and grading student assignments.</p>
                 </div>
             </template>
         </SlidingInfo>
