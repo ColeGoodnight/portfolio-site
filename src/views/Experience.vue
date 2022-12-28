@@ -33,7 +33,11 @@
                     <p>More recently I assisted with WWU's introductory programming course, Programming Fundamentals in C++. This class starts from scratch, teaching students fundamental ideas such as variables, control flow, and code reuse. This professor already had a CI/CD pipeline to automate grading, so my primary focus was running labs and helping students with conceptual understanding. As there were many more students with much less experience in this class, I often found myself challenged to create analogies and utilize other creative methods to describe difficult concepts.</p>
                     <br>
                     <h2>Fall 2022</h2>
-                    <p>This quarter I will perform similar duties as Teacher's Assistant for WWU's introductory web development course. The primary topics of this class include basic HTML/CSS and some JavaScript. My responsibilities include running weekly labs and grading student assignments.</p>
+                    <p>During this period I performed similar duties as Teacher's Assistant for WWU's introductory web development course. The primary topics of this class include basic HTML/CSS and some JavaScript. My responsibilities included running weekly labs and grading student assignments.</p>
+                    <br>
+                    <h2>Winter 2022</h2>
+                    <p>This quarter I am TAing for WWU's introductory systems course. Topics of this course include low level C and ASM programming. My responsibilities include running weekly labs and grading student assignments.</p>
+                
                 </div>
             </template>
         </SlidingInfo>
